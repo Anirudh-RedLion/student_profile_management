@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../features/authentication/auth_mock_data.dart';
 
 class AppThemes {
   // Role-based color schemes
@@ -8,11 +9,11 @@ class AppThemes {
   static const Color adminPrimary = Color(0xFFDC2626); // Red
   static const Color financePrimary = Color(0xFFF59E0B); // Gold
 
-  static ThemeData light() {
+  static ThemeData light({UserRole? role}) {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
-      colorScheme: ColorScheme.fromSeed(seedColor: studentPrimary),
+      colorScheme: ColorScheme.fromSeed(seedColor: _roleColor(role)),
       textTheme: GoogleFonts.poppinsTextTheme(),
       cardTheme: const CardTheme(
         elevation: 2,
@@ -23,12 +24,12 @@ class AppThemes {
     );
   }
 
-  static ThemeData dark() {
+  static ThemeData dark({UserRole? role}) {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
       colorScheme: ColorScheme.fromSeed(
-        seedColor: studentPrimary,
+        seedColor: _roleColor(role),
         brightness: Brightness.dark,
       ),
       textTheme: GoogleFonts.poppinsTextTheme(ThemeData(brightness: Brightness.dark).textTheme),
@@ -39,5 +40,19 @@ class AppThemes {
         ),
       ),
     );
+  }
+
+  static Color _roleColor(UserRole? role) {
+    switch (role) {
+      case UserRole.hr:
+        return hrPrimary;
+      case UserRole.admin:
+        return adminPrimary;
+      case UserRole.finance:
+        return financePrimary;
+      case UserRole.student:
+      default:
+        return studentPrimary;
+    }
   }
 } 

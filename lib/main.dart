@@ -17,13 +17,18 @@ class StudentPMApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => AuthProvider()),
       ],
-      child: MaterialApp.router(
-        title: 'Student Profile Management',
-        theme: AppThemes.light(),
-        darkTheme: AppThemes.dark(),
-        themeMode: ThemeMode.system,
-        routerConfig: AppRouter.router,
-        debugShowCheckedModeBanner: false,
+      child: Consumer<AuthProvider>(
+        builder: (context, auth, child) {
+          final role = auth.currentRole;
+          return MaterialApp.router(
+            title: 'Student Profile Management',
+            theme: AppThemes.light(role: role),
+            darkTheme: AppThemes.dark(role: role),
+            themeMode: ThemeMode.system,
+            routerConfig: AppRouter.router,
+            debugShowCheckedModeBanner: false,
+          );
+        },
       ),
     );
   }
