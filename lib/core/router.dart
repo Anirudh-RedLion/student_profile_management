@@ -5,6 +5,9 @@ import '../features/authentication/auth_provider.dart';
 import '../features/authentication/login_screen.dart';
 import '../features/authentication/auth_mock_data.dart';
 import '../features/dashboard/student_dashboard_screen.dart';
+import '../features/dashboard/hr_dashboard_screen.dart';
+import '../features/dashboard/admin_dashboard_screen.dart';
+import '../features/dashboard/finance_dashboard_screen.dart';
 import '../features/profile/profile_screen.dart';
 import '../features/courses/course_catalog_screen.dart';
 import '../features/jobs/job_listings_screen.dart';
@@ -20,7 +23,18 @@ class AppRouter {
           if (!auth.isLoggedIn) {
             return const LoginScreen();
           }
-          return const PlaceholderDashboard();
+          switch (auth.currentRole) {
+            case UserRole.student:
+              return const StudentDashboardScreen();
+            case UserRole.hr:
+              return const HRDashboardScreen();
+            case UserRole.admin:
+              return const AdminDashboardScreen();
+            case UserRole.finance:
+              return const FinanceDashboardScreen();
+            default:
+              return const Placeholder();
+          }
         },
       ),
       GoRoute(
