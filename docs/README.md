@@ -66,6 +66,11 @@ A comprehensive cross-platform Flutter application for educational institutions 
 - Changes are reflected immediately (mock data)
 - Profile is accessible from the dashboard via the profile icon
 
+## Progress Update (My Courses)
+- Students can view all enrolled courses in a dedicated My Courses screen
+- Progress indicators and navigation to course details included
+- Access My Courses from the floating button in the course catalog
+
 ## How to View the New Structure
 - Run the app as before:
   - `flutter run` (mobile)
@@ -103,6 +108,12 @@ flutter run -d chrome
 - View your profile details
 - Click Edit Profile, update your name or avatar, and save
 - See the changes reflected on your profile
+
+## How to Test My Courses
+- Enroll in one or more courses from the catalog
+- Click the 'My Courses' floating button
+- View your enrolled courses and progress
+- Tap a course to see its details
 
 ## Next Steps
 - Scaffold feature-first folder structure in `lib/`

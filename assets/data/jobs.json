@@ -1,0 +1,202 @@
+[
+  {
+    "id": "j1",
+    "title": "Software Engineer Intern",
+    "company": "TCS",
+    "salary": "₹30,000/month",
+    "requirements": ["B.Tech CS/IT", "Flutter/Dart", "Problem Solving"],
+    "description": "Work on real-world Flutter projects with TCS mentors.",
+    "status": "open",
+    "location": "Bangalore"
+  },
+  {
+    "id": "j2",
+    "title": "Business Analyst",
+    "company": "Infosys",
+    "salary": "₹6 LPA",
+    "requirements": ["MBA/BBA", "Excel", "Communication"],
+    "description": "Analyze business processes and prepare reports.",
+    "status": "open",
+    "location": "Pune"
+  },
+  {
+    "id": "j3",
+    "title": "Data Science Trainee",
+    "company": "Wipro",
+    "salary": "₹35,000/month",
+    "requirements": ["Python", "Statistics", "Machine Learning"],
+    "description": "Assist in building ML models for client projects.",
+    "status": "open",
+    "location": "Hyderabad"
+  },
+  {
+    "id": "j4",
+    "title": "HR Coordinator",
+    "company": "HCL",
+    "salary": "₹4.5 LPA",
+    "requirements": ["BBA/MBA", "People Skills", "Recruitment"],
+    "description": "Coordinate recruitment and onboarding activities.",
+    "status": "open",
+    "location": "Noida"
+  },
+  {
+    "id": "j5",
+    "title": "Marketing Intern",
+    "company": "Zomato",
+    "salary": "₹25,000/month",
+    "requirements": ["Any Graduate", "Social Media", "Creativity"],
+    "description": "Support digital marketing campaigns and content creation.",
+    "status": "open",
+    "location": "Delhi"
+  },
+  {
+    "id": "j6",
+    "title": "Frontend Developer",
+    "company": "Flipkart",
+    "salary": "₹8 LPA",
+    "requirements": ["ReactJS", "HTML/CSS", "JavaScript"],
+    "description": "Develop and maintain e-commerce web interfaces.",
+    "status": "open",
+    "location": "Bangalore"
+  },
+  {
+    "id": "j7",
+    "title": "Finance Associate",
+    "company": "ICICI Bank",
+    "salary": "₹5.5 LPA",
+    "requirements": ["B.Com/M.Com", "Accounting", "Excel"],
+    "description": "Assist in financial reporting and analysis.",
+    "status": "open",
+    "location": "Mumbai"
+  },
+  {
+    "id": "j8",
+    "title": "Operations Executive",
+    "company": "Ola Cabs",
+    "salary": "₹4 LPA",
+    "requirements": ["Any Graduate", "Operations", "MS Office"],
+    "description": "Manage daily operations and vendor coordination.",
+    "status": "open",
+    "location": "Chennai"
+  },
+  {
+    "id": "j9",
+    "title": "Cloud Engineer",
+    "company": "Amazon AWS",
+    "salary": "₹10 LPA",
+    "requirements": ["Cloud Platforms", "Linux", "Networking"],
+    "description": "Deploy and manage cloud infrastructure for clients.",
+    "status": "open",
+    "location": "Remote"
+  },
+  {
+    "id": "j10",
+    "title": "Content Writer",
+    "company": "BYJU'S",
+    "salary": "₹3.6 LPA",
+    "requirements": ["English", "Writing Skills", "Creativity"],
+    "description": "Create educational content for K-12 students.",
+    "status": "open",
+    "location": "Bangalore"
+  },
+  {
+    "id": "j11",
+    "title": "Backend Developer",
+    "company": "Paytm",
+    "salary": "₹9 LPA",
+    "requirements": ["Node.js", "APIs", "Databases"],
+    "description": "Build scalable backend services for payment systems.",
+    "status": "open",
+    "location": "Noida"
+  },
+  {
+    "id": "j12",
+    "title": "UI/UX Designer",
+    "company": "Swiggy",
+    "salary": "₹7 LPA",
+    "requirements": ["Figma", "Design Thinking", "Creativity"],
+    "description": "Design user interfaces for food delivery apps.",
+    "status": "open",
+    "location": "Bangalore"
+  },
+  {
+    "id": "j13",
+    "title": "QA Tester",
+    "company": "Tech Mahindra",
+    "salary": "₹4.2 LPA",
+    "requirements": ["Testing", "Automation", "Attention to Detail"],
+    "description": "Test software products and automate test cases.",
+    "status": "open",
+    "location": "Pune"
+  },
+  {
+    "id": "j14",
+    "title": "Sales Executive",
+    "company": "Reliance Retail",
+    "salary": "₹3.8 LPA",
+    "requirements": ["Sales", "Negotiation", "Communication"],
+    "description": "Drive sales and manage customer relationships.",
+    "status": "open",
+    "location": "Delhi"
+  },
+  {
+    "id": "j15",
+    "title": "Support Engineer",
+    "company": "Microsoft",
+    "salary": "₹11 LPA",
+    "requirements": ["Tech Support", "Windows", "Customer Service"],
+    "description": "Provide technical support to enterprise clients.",
+    "status": "open",
+    "location": "Hyderabad"
+  },
+  {
+    "id": "j16",
+    "title": "Mobile App Developer",
+    "company": "Freshworks",
+    "salary": "₹8.5 LPA",
+    "requirements": ["Android/iOS", "Flutter", "APIs"],
+    "description": "Develop mobile apps for SaaS products.",
+    "status": "open",
+    "location": "Chennai"
+  },
+  {
+    "id": "j17",
+    "title": "Network Engineer",
+    "company": "Cisco",
+    "salary": "₹9.5 LPA",
+    "requirements": ["Networking", "CCNA", "Troubleshooting"],
+    "description": "Manage and troubleshoot network infrastructure.",
+    "status": "open",
+    "location": "Bangalore"
+  },
+  {
+    "id": "j18",
+    "title": "Graphic Designer",
+    "company": "Adobe",
+    "salary": "₹6.2 LPA",
+    "requirements": ["Photoshop", "Illustrator", "Creativity"],
+    "description": "Create graphics for digital marketing and branding.",
+    "status": "open",
+    "location": "Remote"
+  },
+  {
+    "id": "j19",
+    "title": "Product Manager",
+    "company": "Google",
+    "salary": "₹18 LPA",
+    "requirements": ["Product Management", "Agile", "Leadership"],
+    "description": "Lead product development teams and strategy.",
+    "status": "open",
+    "location": "Bangalore"
+  },
+  {
+    "id": "j20",
+    "title": "Research Intern",
+    "company": "IIT Bombay",
+    "salary": "₹28,000/month",
+    "requirements": ["Research", "Data Analysis", "Report Writing"],
+    "description": "Assist in academic research projects and publications.",
+    "status": "open",
+    "location": "Mumbai"
+  }
+] 

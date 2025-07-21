@@ -7,6 +7,7 @@ import '../features/authentication/auth_mock_data.dart';
 import '../features/dashboard/student_dashboard_screen.dart';
 import '../features/profile/profile_screen.dart';
 import '../features/courses/course_catalog_screen.dart';
+import '../features/jobs/job_listings_screen.dart';
 
 class AppRouter {
   static final GoRouter router = GoRouter(
@@ -49,6 +50,16 @@ class AppRouter {
             return const LoginScreen();
           }
           return const CourseCatalogScreen();
+        },
+      ),
+      GoRoute(
+        path: '/jobs',
+        builder: (context, state) {
+          final auth = Provider.of<AuthProvider>(context);
+          if (!auth.isLoggedIn) {
+            return const LoginScreen();
+          }
+          return const JobListingsScreen();
         },
       ),
     ],

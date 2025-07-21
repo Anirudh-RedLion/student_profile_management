@@ -44,7 +44,7 @@ class StudentDashboardScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: const [
               _QuickAction(icon: Icons.book, label: 'Browse Courses'),
-              _QuickAction(icon: Icons.work, label: 'Apply Jobs'),
+              _QuickAction(icon: Icons.work, label: 'Browse Jobs'),
               _QuickAction(icon: Icons.help, label: 'Ask Question'),
             ],
           ),
@@ -106,6 +106,8 @@ class _QuickAction extends StatelessWidget {
       onTap: () {
         if (label == 'Browse Courses') {
           GoRouter.of(context).go('/courses');
+        } else if (label == 'Browse Jobs') {
+          GoRouter.of(context).go('/jobs');
         }
       },
       child: Column(

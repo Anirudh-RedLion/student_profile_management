@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../shared/models/course.dart';
 import 'course_detail_screen.dart';
+import 'my_courses_screen.dart';
 
 class CourseCatalogScreen extends StatefulWidget {
   const CourseCatalogScreen({super.key});
@@ -95,6 +96,20 @@ class _CourseCatalogScreenState extends State<CourseCatalogScreen> {
           ),
         ],
       ),
+      floatingActionButton: _enrolledCourseIds.isNotEmpty
+          ? FloatingActionButton.extended(
+              icon: const Icon(Icons.list_alt),
+              label: const Text('My Courses'),
+              onPressed: () {
+                final myCourses = _courses.where((c) => _enrolledCourseIds.contains(c.id)).toList();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => MyCoursesScreen(enrolledCourses: myCourses),
+                  ),
+                );
+              },
+            )
+          : null,
     );
   }
 }
