@@ -108,6 +108,8 @@ class _QuickAction extends StatelessWidget {
           GoRouter.of(context).go('/courses');
         } else if (label == 'Browse Jobs') {
           GoRouter.of(context).go('/jobs');
+        } else if (label == 'Ask Question') {
+          GoRouter.of(context).go('/queries');
         }
       },
       child: Column(

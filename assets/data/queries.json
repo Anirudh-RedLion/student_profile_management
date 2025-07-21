@@ -1,0 +1,36 @@
+[
+  {
+    "id": "q1",
+    "student": "Aarav Sharma",
+    "category": "Course Enrollment",
+    "status": "open",
+    "priority": "high",
+    "question": "How do I enroll in the AI course?",
+    "responses": [
+      {"by": "HR", "message": "Go to the course catalog and click enroll.", "time": "2024-07-20 10:00"}
+    ]
+  },
+  {
+    "id": "q2",
+    "student": "Aarav Sharma",
+    "category": "Job Application",
+    "status": "pending",
+    "priority": "medium",
+    "question": "What is the status of my TCS application?",
+    "responses": [
+      {"by": "HR", "message": "Your application is under review.", "time": "2024-07-20 11:00"}
+    ]
+  },
+  {
+    "id": "q3",
+    "student": "Priya Nair",
+    "category": "Finance",
+    "status": "resolved",
+    "priority": "low",
+    "question": "When will the fee receipt be available?",
+    "responses": [
+      {"by": "Finance", "message": "Receipts will be available by end of this week.", "time": "2024-07-19 09:00"},
+      {"by": "Priya Nair", "message": "Thank you!", "time": "2024-07-19 09:30"}
+    ]
+  }
+] 
