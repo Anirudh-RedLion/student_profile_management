@@ -60,6 +60,12 @@ A comprehensive cross-platform Flutter application for educational institutions 
   - Progress tracking indicators
 - Only accessible to users with the Student role
 
+## Progress Update (Profile Management)
+- Profile screen displays avatar, name, role, contact info, and resume download
+- Edit Profile button opens a form for updating name and avatar (simulated upload)
+- Changes are reflected immediately (mock data)
+- Profile is accessible from the dashboard via the profile icon
+
 ## How to View the New Structure
 - Run the app as before:
   - `flutter run` (mobile)
@@ -90,6 +96,13 @@ flutter run -d chrome
 - Log in as a Student
 - You will be redirected to the Student Dashboard
 - Explore the stats, quick actions, activity, and progress sections
+
+## How to Test Profile Management
+- Log in as a student
+- Click the profile icon in the dashboard app bar
+- View your profile details
+- Click Edit Profile, update your name or avatar, and save
+- See the changes reflected on your profile
 
 ## Next Steps
 - Scaffold feature-first folder structure in `lib/`

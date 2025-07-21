@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../authentication/auth_provider.dart';
+import 'profile_edit_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -68,9 +69,10 @@ class ProfileScreen extends StatelessWidget {
           const SizedBox(height: 24),
           Center(
             child: ElevatedButton.icon(
-              onPressed: () {
-                // TODO: Implement edit profile
-                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Edit profile coming soon!')));
+              onPressed: () async {
+                await Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const ProfileEditScreen()),
+                );
               },
               icon: const Icon(Icons.edit),
               label: const Text('Edit Profile'),
