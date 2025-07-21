@@ -1,0 +1,92 @@
+[
+  {
+    "id": "c1",
+    "title": "Flutter Basics",
+    "description": "Learn the fundamentals of Flutter and Dart for cross-platform apps.",
+    "instructor": "Dr. Priya Nair",
+    "domain": "Technology",
+    "progress": 0.7,
+    "materials": ["Introduction.pdf", "Widgets.mp4", "Layouts.pdf"]
+  },
+  {
+    "id": "c2",
+    "title": "Data Structures & Algorithms",
+    "description": "Master core data structures and algorithms for coding interviews.",
+    "instructor": "Prof. Rohan Mehta",
+    "domain": "Computer Science",
+    "progress": 0.5,
+    "materials": ["Arrays.pdf", "LinkedLists.mp4", "Sorting.pdf"]
+  },
+  {
+    "id": "c3",
+    "title": "AI & Machine Learning",
+    "description": "Introduction to AI concepts and machine learning models.",
+    "instructor": "Dr. Sneha Patel",
+    "domain": "Artificial Intelligence",
+    "progress": 0.3,
+    "materials": ["AI_Basics.pdf", "ML_Models.mp4"]
+  },
+  {
+    "id": "c4",
+    "title": "Business Communication",
+    "description": "Develop effective business communication skills.",
+    "instructor": "Ms. Aarav Sharma",
+    "domain": "Business",
+    "progress": 0.9,
+    "materials": ["Emails.pdf", "Presentations.mp4"]
+  },
+  {
+    "id": "c5",
+    "title": "Web Development",
+    "description": "Build modern web applications using HTML, CSS, and JavaScript.",
+    "instructor": "Dr. Priya Nair",
+    "domain": "Technology",
+    "progress": 0.2,
+    "materials": ["HTML.pdf", "CSS.mp4", "JS.pdf"]
+  },
+  {
+    "id": "c6",
+    "title": "Financial Accounting",
+    "description": "Understand the basics of financial accounting and reporting.",
+    "instructor": "Prof. Rohan Mehta",
+    "domain": "Finance",
+    "progress": 0.6,
+    "materials": ["Accounting.pdf", "Reports.mp4"]
+  },
+  {
+    "id": "c7",
+    "title": "Digital Marketing",
+    "description": "Explore digital marketing strategies and tools.",
+    "instructor": "Ms. Sneha Patel",
+    "domain": "Business",
+    "progress": 0.4,
+    "materials": ["SEO.pdf", "SocialMedia.mp4"]
+  },
+  {
+    "id": "c8",
+    "title": "Cloud Computing",
+    "description": "Learn about cloud platforms and deployment models.",
+    "instructor": "Dr. Priya Nair",
+    "domain": "Technology",
+    "progress": 0.1,
+    "materials": ["CloudIntro.pdf", "AWS.mp4"]
+  },
+  {
+    "id": "c9",
+    "title": "Entrepreneurship",
+    "description": "Discover the essentials of starting and running a business.",
+    "instructor": "Prof. Rohan Mehta",
+    "domain": "Business",
+    "progress": 0.8,
+    "materials": ["Startup.pdf", "Pitching.mp4"]
+  },
+  {
+    "id": "c10",
+    "title": "Statistics for Data Science",
+    "description": "Statistical concepts and methods for data analysis.",
+    "instructor": "Dr. Sneha Patel",
+    "domain": "Data Science",
+    "progress": 0.55,
+    "materials": ["Stats.pdf", "DataAnalysis.mp4"]
+  }
+] 

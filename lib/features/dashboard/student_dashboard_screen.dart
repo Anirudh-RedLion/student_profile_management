@@ -102,12 +102,19 @@ class _QuickAction extends StatelessWidget {
   const _QuickAction({required this.icon, required this.label});
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        CircleAvatar(child: Icon(icon)),
-        const SizedBox(height: 4),
-        Text(label, style: const TextStyle(fontSize: 12)),
-      ],
+    return InkWell(
+      onTap: () {
+        if (label == 'Browse Courses') {
+          GoRouter.of(context).go('/courses');
+        }
+      },
+      child: Column(
+        children: [
+          CircleAvatar(child: Icon(icon)),
+          const SizedBox(height: 4),
+          Text(label, style: const TextStyle(fontSize: 12)),
+        ],
+      ),
     );
   }
 }
