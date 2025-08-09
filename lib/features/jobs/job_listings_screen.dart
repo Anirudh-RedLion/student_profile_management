@@ -1,8 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 import '../../shared/models/job.dart';
 import 'job_detail_screen.dart';
+import '../../core/router.dart';
 
 class JobListingsScreen extends StatefulWidget {
   const JobListingsScreen({super.key});
@@ -44,7 +46,19 @@ class _JobListingsScreenState extends State<JobListingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Job Listings')),
+      appBar: AppBar(
+        title: const Text('Job Listings'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => safePop(context),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.home),
+            onPressed: () => context.go('/'),
+          ),
+        ],
+      ),
       body: Column(
         children: [
           Padding(

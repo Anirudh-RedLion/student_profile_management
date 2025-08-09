@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../shared/models/query.dart';
+import '../../core/router.dart';
 
 class QueryDetailScreen extends StatefulWidget {
   final SupportQuery query;
@@ -41,7 +43,19 @@ class _QueryDetailScreenState extends State<QueryDetailScreen> {
   Widget build(BuildContext context) {
     final q = widget.query;
     return Scaffold(
-      appBar: AppBar(title: const Text('Query Details')),
+              appBar: AppBar(
+          title: const Text('Query Details'),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () => safePop(context),
+          ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.home),
+              onPressed: () => context.go('/'),
+            ),
+          ],
+        ),
       body: Padding(
         padding: const EdgeInsets.all(24),
         child: Column(

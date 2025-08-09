@@ -1,9 +1,11 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 import '../../shared/models/course.dart';
 import 'course_detail_screen.dart';
 import 'my_courses_screen.dart';
+import '../../core/router.dart';
 
 class CourseCatalogScreen extends StatefulWidget {
   const CourseCatalogScreen({super.key});
@@ -45,7 +47,19 @@ class _CourseCatalogScreenState extends State<CourseCatalogScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Course Catalog')),
+      appBar: AppBar(
+        title: const Text('Course Catalog'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => safePop(context),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.home),
+            onPressed: () => context.go('/'),
+          ),
+        ],
+      ),
       body: Column(
         children: [
           Padding(

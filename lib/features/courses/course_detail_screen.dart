@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../shared/models/course.dart';
+import '../../core/router.dart';
 
 class CourseDetailScreen extends StatelessWidget {
   final Course course;
@@ -10,7 +12,19 @@ class CourseDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(course.title)),
+              appBar: AppBar(
+          title: Text(course.title),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () => safePop(context),
+          ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.home),
+              onPressed: () => context.go('/'),
+            ),
+          ],
+        ),
       body: ListView(
         padding: const EdgeInsets.all(24),
         children: [

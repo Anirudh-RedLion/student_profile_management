@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../shared/models/job.dart';
+import '../../core/router.dart';
 
 class JobDetailScreen extends StatelessWidget {
   final Job job;
@@ -10,7 +12,19 @@ class JobDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(job.title)),
+              appBar: AppBar(
+          title: Text(job.title),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () => safePop(context),
+          ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.home),
+              onPressed: () => context.go('/'),
+            ),
+          ],
+        ),
       body: ListView(
         padding: const EdgeInsets.all(24),
         children: [

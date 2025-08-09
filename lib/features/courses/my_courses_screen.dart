@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../shared/models/course.dart';
 import 'course_detail_screen.dart';
+import '../../core/router.dart';
 
 class MyCoursesScreen extends StatelessWidget {
   final List<Course> enrolledCourses;
@@ -9,7 +11,19 @@ class MyCoursesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('My Courses')),
+      appBar: AppBar(
+        title: const Text('My Courses'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => safePop(context),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.home),
+            onPressed: () => context.go('/'),
+          ),
+        ],
+      ),
       body: enrolledCourses.isEmpty
           ? const Center(child: Text('You are not enrolled in any courses.'))
           : ListView.builder(

@@ -1,8 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
 import '../../shared/models/query.dart';
 import 'query_detail_screen.dart';
+import '../../core/router.dart';
 
 class QueryListScreen extends StatefulWidget {
   const QueryListScreen({super.key});
@@ -47,7 +49,19 @@ class _QueryListScreenState extends State<QueryListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('My Queries')),
+      appBar: AppBar(
+        title: const Text('My Queries'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => safePop(context),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.home),
+            onPressed: () => context.go('/'),
+          ),
+        ],
+      ),
       body: _loading
           ? ListView.builder(
               itemCount: 6,

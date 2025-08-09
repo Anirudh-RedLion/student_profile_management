@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class FinanceDashboardScreen extends StatelessWidget {
   const FinanceDashboardScreen({super.key});
@@ -15,7 +16,26 @@ class FinanceDashboardScreen extends StatelessWidget {
       {'id': 'INV002', 'student': 'Priya Nair', 'amount': '₹48,000'},
     ];
     return Scaffold(
-      appBar: AppBar(title: const Text('Finance Dashboard')),
+      appBar: AppBar(
+        title: const Text('Finance Dashboard'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            // Check if we can pop, if not go to home
+            if (context.canPop()) {
+              context.pop();
+            } else {
+              context.go('/');
+            }
+          },
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.home),
+            onPressed: () => context.go('/'),
+          ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(24),
         children: [

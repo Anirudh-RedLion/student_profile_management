@@ -17,4 +17,17 @@ class AuthProvider extends ChangeNotifier {
     _currentUser = null;
     notifyListeners();
   }
+
+  // Helper method to get a random student for testing
+  MockUser getRandomStudent() {
+    final students = mockUsers.where((user) => user.role == UserRole.student).toList();
+    if (students.isEmpty) return mockUsers.first;
+    students.shuffle();
+    return students.first;
+  }
+
+  // Helper method to get all users of a specific role
+  List<MockUser> getUsersByRole(UserRole role) {
+    return mockUsers.where((user) => user.role == role).toList();
+  }
 } 

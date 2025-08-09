@@ -13,6 +13,17 @@ import '../features/courses/course_catalog_screen.dart';
 import '../features/jobs/job_listings_screen.dart';
 import '../features/queries/query_list_screen.dart';
 
+// Utility function for safe navigation back
+void safePop(BuildContext context, {String? fallbackRoute}) {
+  if (context.canPop()) {
+    context.pop();
+  } else if (fallbackRoute != null) {
+    context.go(fallbackRoute);
+  } else {
+    context.go('/');
+  }
+}
+
 class AppRouter {
   static final GoRouter router = GoRouter(
     routes: [
