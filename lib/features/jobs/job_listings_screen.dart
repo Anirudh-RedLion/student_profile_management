@@ -29,7 +29,7 @@ class _JobListingsScreenState extends State<JobListingsScreen> {
   Future<void> _loadJobs() async {
     setState(() => _loading = true);
     await Future.delayed(const Duration(seconds: 1)); // Simulate network delay
-    final data = await rootBundle.loadString('assets/data/jobs.json');
+    final data = await rootBundle.loadString('assets/assets/data/jobs.json');
     final List<dynamic> jsonList = json.decode(data);
     _jobs = jsonList.map((e) => Job.fromJson(e)).toList();
     _filtered = _jobs;

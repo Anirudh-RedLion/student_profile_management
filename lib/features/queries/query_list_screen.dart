@@ -26,7 +26,7 @@ class _QueryListScreenState extends State<QueryListScreen> {
   Future<void> _loadQueries() async {
     setState(() => _loading = true);
     await Future.delayed(const Duration(seconds: 1)); // Simulate network delay
-    final data = await rootBundle.loadString('assets/data/queries.json');
+    final data = await rootBundle.loadString('assets/assets/data/queries.json');
     final List<dynamic> jsonList = json.decode(data);
     // Only show queries for the current student (mock: 'Aarav Sharma')
     _queries = jsonList.map((e) => SupportQuery.fromJson(e)).where((q) => q.student == 'Aarav Sharma').toList();

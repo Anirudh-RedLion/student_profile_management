@@ -36,7 +36,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
   Future<void> _loadCourses() async {
     setState(() => _loading = true);
     await Future.delayed(const Duration(seconds: 1));
-    final data = await rootBundle.loadString('assets/data/courses.json');
+    final data = await rootBundle.loadString('assets/assets/data/courses.json');
     final List<dynamic> jsonList = json.decode(data);
     _courses = jsonList.map((e) => Course.fromJson(e)).toList();
     setState(() => _loading = false);
